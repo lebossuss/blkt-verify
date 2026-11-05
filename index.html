@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blackout Interactive Verify</title>
+<body style="margin:0;min-height:100vh;display:grid;place-items:center;background:#111214;color:#eee;font-family:system-ui,sans-serif">
+<div style="max-width:420px;padding:32px;text-align:center"><h1 style="font-size:22px">Linking your Roblox account…</h1><p style="color:#aaa">One second.</p></div>
+<script>
+// Roblox renvoie ici (HTTPS) ; on transmet le code au bot
+var q = location.search;
+if (/[?&](code|error)=/.test(q)) location.replace('http://nh3r.now-heberg.com:27130/oauth/roblox' + q);
+else document.querySelector('h1').textContent = 'Blackout Interactive Verify';
+</script>
